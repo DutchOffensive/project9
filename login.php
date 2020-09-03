@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["email"] = $email;                            
                             
                             // Redirect user to welcome page
-                            header("location: welcome.html");
+                            header("location: home.html");
                         } else{
                             // Display an error message if wachtwoord is not valid
                             $wachtwoord_err = "The password you entered was not valid.";
