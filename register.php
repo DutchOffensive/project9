@@ -46,7 +46,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 
-
     // Validate wachtwoord
     $wachtwoord = ($_POST["wachtwoord"]);
     
@@ -54,8 +53,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $lowercase = preg_match('@[a-z]@', $wachtwoord);
     $number    = preg_match('@[0-9]@', $wachtwoord);
     $specialChars = preg_match('@[^\w]@', $wachtwoord);
-
-    
 
     if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($wachtwoord) < 8) {
         $wachtwoord_err = "Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.";
@@ -104,10 +101,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
-
-
-
-
 
 <html>
     <head>
