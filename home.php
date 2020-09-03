@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 
 }
@@ -20,7 +20,9 @@ header("location: index.php");
     <body>
 
 
-        <a class="gast" href="gasten.html"><button class="btn btn-primary">Gast Registreren</button></a>
+        <a class="gast" href="gasten.php"><button class="btn btn-primary">Gast Registreren</button></a>
+        <a class="gast" href="logout.php"><button class="btn btn-danger">Uitloggen</button></a>
+
 
         <h1>ROC Rivor</h1><br>
 <div class="container">

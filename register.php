@@ -125,6 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <title>login check</title>
     </head>
     <body>
+        <div class="container">
         <div class="wrapper">
             <h2>Sign Up</h2>
             <p>Please fill this form to create an account.</p>
@@ -146,10 +147,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Submit">
-                    <input type="reset" class="btn btn-danger" value="Reset">
                 </div>
-                <p>Already have an account? <a href="login.php">Login here</a>.
             </form>
+            <a href="index.php"><button class="btn btn-danger">Terug</button></a>
+        </div>
         </div>
     </body>
 </html>

@@ -6,7 +6,7 @@
     <body>
 
         <h1>Gasten registratie</h1><br>
-
+        <div class="container">
           <form>
             <div class="form-row">
               <div class="col-md-6 mb-3">
@@ -38,8 +38,8 @@
             </div>
             <button class="btn btn-primary" type="submit">Registreren</button> 
           </form>
-          <a href="index.html"><button class="btn btn-danger">Terug</button></a>
-
+          <a href="index.php"><button class="btn btn-danger">Terug</button></a>
+        </div>
 
 
 
