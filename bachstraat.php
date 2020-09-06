@@ -6,7 +6,7 @@
     <body>
 
 <a href="home.php"><button class="btn btn-danger">Terug</button></a>
-        <h1>ROC Rivor</h1><br>
+        <h1>Registraties</h1><br>
 
 <div class="container-lg">
 <table class='table table-striped'>
@@ -38,12 +38,14 @@ while($row = mysqli_fetch_assoc($query)){
     array_push($rows, $row);
   }
   foreach ($rows as $key => $array) {
+    $id = $array['id_guests'];
     echo "<div class='container-lg'>"; 
     echo "<table class='table table-striped'>"; 
     echo "<tbody>";
     echo "<td scope='col'>" . $array["firstname"] . "</td>" . "<td scope='col'>" . $array["lastname"] . "</td>" . "<td scope='col'>" . $array["phone"] . "</td>" . "<td scope='col'>" . $array["timestamp"] . "</td>";
     echo "</tbody>";
     echo "</table>";
+    echo "<a href='details.php?id=" .  $array['id_guests'] . "'" . ">" . "<button class='btn btn-info' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>";
     echo "</div>";
   }
 ?>

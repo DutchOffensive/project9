@@ -3,16 +3,10 @@ require_once "config.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
-  $emailaddress = $_POST['emailaddress'];
-  $phone = $_POST['phone'];
-  $checkcovid = $_POST['checkcovid'];
-
   $sql = "INSERT INTO `guests` (firstname, lastname, email, phone, covid) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['phone']."','".$_POST['checkcovid']."')";
   mysqli_query($link,$sql);
+  header('location: index.php');
   }
-
 ?>
 
 <html>
@@ -46,13 +40,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               </div>
             </div>
             <div class="form-group">
-              <div class="form-check">
               <label for="validationDefault04">Heeft u klachen van Covid-19?</label>
               <select name="checkcovid" class="browser-default custom-select">
                 <option selected value="1">Ja</option>
                 <option value="2">Nee</option>
             </select>
-              </div>
             </div>
             <button class="btn btn-primary" type="submit">Registreren</button> 
           </form>
