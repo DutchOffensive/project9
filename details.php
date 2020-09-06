@@ -37,7 +37,7 @@ while($row = mysqli_fetch_assoc($query)){
       $email = $array["email"];
       $phone = $array["phone"];
       $covid = $array["covid"];
-    echo "<div class='container-lg center'>" .
+    echo "<div class='container-lg'>" .
     "<form action='<?php echo htmlspecialchars($_SERVER[PHP_SELF]); ?>' method='post'>" .
      "<div class='form-row'>" .
     "<div class='col-md-6 mb-3'>" .
