@@ -10,14 +10,6 @@
 
 <div class="container-lg">
 <table class='table table-striped'>
-<!-- <thead class="bigger-font">
-    <tr>
-      <th scope="col">Firstname</th>
-      <th scope="col">Lastname</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Time</th>
-    </tr>
-  </thead> -->
 <tbody class="bigger-font">
     <td scope="col"><p>Firstname</p></td>
     <td scope="col"><p>Lastname</p> </td>  
