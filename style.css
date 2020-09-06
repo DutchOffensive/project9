@@ -21,3 +21,14 @@ body{
 .input-class{
     width: 30%;
 }
+table{
+    width: 100%;
+    justify-content: left;
+}
+td{
+    width: 10%;
+}
+.bigger-font{
+    font-size: larger;
+    font-weight: bold;
+}

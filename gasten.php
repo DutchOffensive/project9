@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $phone = $_POST['phone'];
   $checkcovid = $_POST['checkcovid'];
 
-  $sql = "INSERT INTO `guests` (firstname, lastname, email, phone, covid) VALUES ('$firstname','$lastname','$emailaddress',$phone','$checkcovid')";
+  $sql = "INSERT INTO `guests` (firstname, lastname, email, phone, covid) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['phone']."','".$_POST['checkcovid']."')";
   mysqli_query($link,$sql);
   }
 

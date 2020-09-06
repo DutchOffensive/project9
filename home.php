@@ -30,7 +30,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Bachstraat, Tiel (hoofdlocatie)</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Check aanwezigen</a>
+                <a href="bachstraat.php" class="btn btn-primary">Check aanwezigen</a>
                 </div>
             </div>
         </div>
