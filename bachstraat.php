@@ -11,10 +11,10 @@
 <div class="container-lg">
 <table class='table table-striped'>
 <tbody class="bigger-font">
-    <td scope="col"><p>Firstname</p></td>
-    <td scope="col"><p>Lastname</p> </td>  
-    <td scope="col"><p>Phone</p></td>  
-    <td scope="col"><p>Time</p></td>   
+    <td scope="col"><p>Voornaam</p></td>
+    <td scope="col"><p>Achternaam</p> </td>  
+    <td scope="col"><p>Telefoonnummer</p></td>  
+    <td scope="col"><p>Tijd</p></td>   
 </tbody>
 </table>   
 </div>
