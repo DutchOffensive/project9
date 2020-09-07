@@ -4,11 +4,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-<a href="home.php"><button class="btn btn-danger">Terug</button></a>
+    <div class="container-lg">
+    <a href="index.php"><button class="btn btn-success">Home</button></a>
+    <a href="home.php"><button class="btn btn-danger">Terug</button></a>
         <h1>Registraties</h1><br>
 
-<div class="container-lg">
+
 <table class='table table-striped'>
 <tbody class="bigger-font">
     <td scope="col"><p>Voornaam</p></td>

@@ -4,8 +4,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <div class="container-lg">
     <a href="bachstraat.php"><button class="btn btn-danger">Terug</button></a>
     <h1>Gegevens Bijwerken</h1>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -44,22 +46,22 @@ while($row = mysqli_fetch_assoc($query)){
     echo "<div class='container-lg'>" .
     "<form action='<?php echo htmlspecialchars($_SERVER[PHP_SELF]); ?>' method='post'>" .
      "<div class='form-row'>" .
-    "<div class='col-md-6 mb-3'>" .
+    "<div class='col-md-5 mb-3'>" .
       "<label for='validationDefault01'>Voornaam</label>" .
       "<input type='text' class='form-control' value= $firstname id='validationDefault01' name='firstname' required>" .
         "</div>" . "</div>" . 
         "<div class='form-row'>" .
-        "<div class='col-md-6 mb-3'>" .
+        "<div class='col-md-5 mb-3'>" .
           "<label for='validationDefault02'>Achternaam</label>" .
           "<input type='text' class='form-control' value= $lastname id='validationDefault02' name='lastname' required>" .
         "</div>" . "</div>" .
         "<div class='form-row'>" .
-        "<div class='col-md-6 mb-3'>" .
+        "<div class='col-md-5 mb-3'>" .
           "<label for='validationDefault03'>Email</label>" .
           "<input type='email' class='form-control' value= $email id='validationDefault03' name='email' required>" .
         "</div>" . "</div>" .
         "<div class='form-row'>" .
-        "<div class='col-md-6 mb-3'>" .
+        "<div class='col-md-5 mb-3'>" .
           "<label for='validationDefault04'>Achternaam</label>" .
           "<input type='number' class='form-control' value= $phone id='validationDefault04' name='phone' required>" .
         "</div>" . "</div>"
