@@ -17,24 +17,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <body>
 
         <h1>Gasten registratie</h1><br>
-        <div class="container">
+        <div class="container-lg container-sm">
           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-row">
-              <div class="col-md-6 mb-3">
+              <div class="col-lg-6 col-sm-6">
                 <label for="validationDefault01">Voornaam</label>
                 <input type="text" class="form-control" id="validationDefault01" name="firstname" required>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="col-lg-6 col-sm-6">
                 <label for="validationDefault02">Achternaam</label>
                 <input type="text" class="form-control" id="validationDefault02" name="lastname" required>
               </div>
             </div>
             <div class="form-row">
-              <div class="col-md-6 mb-3">
+              <div class="col-lg-6 col-sm-6">
                 <label for="validationDefault03">Email-adres</label>
                 <input type="email" class="form-control" id="validationDefault03" name="emailaddress" required>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="col-lg-6 col-sm-6">
                 <label for="validationDefault03">Telefoonnummer</label>
                 <input type="number" class="form-control" id="validationDefault04" name="phone" required>
               </div>

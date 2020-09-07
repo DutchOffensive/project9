@@ -4,10 +4,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+    <div class="text-center container-lg container-sm">
         <h1>ROC Rivor</h1><br>
-
-        <div class="text-center">
             <a class="gast" href="gasten.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-primary col-lg-4">Gast Registreren</button></a>
             <a class="login" href="login.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-success col-lg-4">Admin login</button></a>
         </div>
