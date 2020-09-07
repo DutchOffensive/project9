@@ -115,13 +115,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/8d488599c9.js" crossorigin="anonymous"></script>
 
-        <title>login check</title>
+        <title>Registreren</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-lg container-xs">
         <div class="wrapper">
-            <h2>Sign Up</h2>
-            <p>Please fill this form to create an account.</p>
+            <h2>Registreren</h2>
+            <p>Vul je account gegevens in.</p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
                     <label>Email</label>
@@ -129,12 +129,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <span class="help-block"><?php echo $email_err; ?></span>
                 </div>    
                 <div class="form-group <?php echo (!empty($wachtwoord_err)) ? 'has-error' : ''; ?>">
-                    <label>Password</label>
+                    <label>Wachtwoord</label>
                     <input type="password" name="wachtwoord" class="form-control" value="<?php echo $wachtwoord; ?>">
                     <span class="help-block"><?php echo $wachtwoord_err; ?></span>
                 </div>
                 <div class="form-group <?php echo (!empty($confirm_wachtwoord_err)) ? 'has-error' : ''; ?>">
-                    <label>Confirm password</label>
+                    <label>Herhaal je wachtwoord</label>
                     <input type="password" name="confirm_wachtwoord" class="form-control" value="<?php echo $confirm_wachtwoord; ?>">
                     <span class="help-block"><?php echo $confirm_wachtwoord_err; ?></span>
                 </div>
