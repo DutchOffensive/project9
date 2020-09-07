@@ -17,8 +17,9 @@ header("location: index.php");
     <body>
 
 <div style="margin-top: 10px;" class="container">
-        <a class="gast" href="gasten.php"><button class="btn btn-primary">Gast Registreren</button></a>
-        <a class="gast" href="logout.php"><button class="btn btn-danger">Uitloggen</button></a>
+        <a href="index.php"><button class="btn btn-success">Home</button></a>
+        <a href="gasten.php"><button class="btn btn-primary">Gast Registreren</button></a>
+        <a href="logout.php"><button class="btn btn-danger">Uitloggen</button></a>
 </div>
 
         <h1>ROC Rivor</h1><br>
