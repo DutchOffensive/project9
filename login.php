@@ -1,20 +1,23 @@
 <?php
+
 // Initialize the session
-if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
-
-
- 
+session_start();
+require_once "config.php";
+// if(!isset($_SESSION["loggedin"])) 
+//     { 
+//         session_start(); 
+//     } 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: home.php");
     exit;
+} else { 
+
 }
+   
  
 // Include config file
-require_once "config.php";
+
  
 // Define variables and initialize with empty values
 $email = $wachtwoord = "";

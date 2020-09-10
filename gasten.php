@@ -15,10 +15,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
         <h1>Gasten registratie</h1><br>
         <div class="container-lg container-xs ">
-          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+          <form action="" method="post">
             <div class="form-row">
               <div class="col-lg-6 col-xs-12">
                 <label for="validationDefault01">Voornaam</label>
