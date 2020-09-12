@@ -32,3 +32,8 @@ td{
     font-size: larger;
     font-weight: bold;
 }
+.knop{
+    position: relative;
+    float: right;
+    margin-top: -15px;
+}

@@ -59,7 +59,7 @@ while($row = mysqli_fetch_assoc($query)){
     echo "<td scope='col'>" . $array["firstname"] . "</td>" . "<td scope='col'>" . $array["lastname"] . "</td>" . "<td scope='col'>" . $array["phone"] . "</td>" . "<td scope='col'>" . $array["timestamp"] . "</td>";
     echo "</tbody>";
     echo "</table>";
-    echo "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-info' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>";
+    echo "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-info knop' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>";
     echo "</div>";
   }
 ?>

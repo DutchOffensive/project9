@@ -44,6 +44,9 @@ while($row = mysqli_fetch_assoc($query)){
     </head>
     <body>
     <div class="container-lg">
+    <a href="bachstraat.php"><button class="btn btn-danger">Terug</button></a>
+    <br>
+    <br>
     </div>
     <div class="container-lg container-xs ">
           <form action="" method="post">
@@ -74,9 +77,11 @@ while($row = mysqli_fetch_assoc($query)){
                 <option value="2">Nee</option>
             </select>
             </div>
-            <input type="submit" class="btn btn-primary" href="details.php?=<?php $id; ?>" name="send_form" value="Wijzigen" />
+            <input type="submit" class="btn btn-primary" name="send_form" value="Wijzigen" />
           </form>
-          <a href="bachstraat.php"><button class="btn btn-danger">Terug</button></a>
+          <form action="" method="post">
+          <input type="submit" class="btn btn-danger" name="delete_form" onclick="return confirm('Weet je zeker dat je dit wilt verwijderen?')" value="Verwijderen" />
+          </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -94,6 +99,14 @@ $covid_edit = (int)$_POST['checkcovid'];
 $sql = "UPDATE `guests` SET `firstname`='$firstname_edit', `lastname`='$lastname_edit', `email`='$email_edit', `phone`='$phone_edit', `covid`='$covid_edit' WHERE `id_guests`='$id'";
 mysqli_query($link,$sql);
 header("location: bachstraat.php");
+}
+
+if (isset ($_POST['delete_form'])){
+$id = $_GET['id'];
+$sql = "DELETE FROM `guests` WHERE `id_guests` = '$id'";
+mysqli_query($link,$sql);
+header("location: bachstraat.php");
+
 }
 // if($_SERVER["REQUEST_METHOD"] == "POST"){
 //   $firstname_edit = $_POST['firstname'];

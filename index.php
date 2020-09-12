@@ -5,7 +5,10 @@
     </head>
     <body>
     <div class="text-center container-lg container-xs">
-        <h1>ROC Rivor</h1><br>
+        <h1>Welkom bij ROC Rivor</h1><br>
+        <div class="container-lg container-xs">
+            <img src="download.png" style="height: 250px; width: 250px;" class="col-lg-4">
+        </div>
             <a class="gast" href="gasten.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-primary col-lg-4">Gast Registreren</button></a>
             <a class="login" href="login.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-success col-lg-4">Admin login</button></a>
         </div>

@@ -15,9 +15,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 
 }
    
- 
 // Include config file
-
  
 // Define variables and initialize with empty values
 $email = $wachtwoord = "";
