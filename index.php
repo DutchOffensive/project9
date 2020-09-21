@@ -4,14 +4,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div class="text-center container-lg container-xs">
-        <h1>Welkom bij ROC Rivor</h1><br>
+    <a class="login" href="login.php"><button class="btn btn-success admin-login">Admin login</button></a>   
+    <div class="text-center container-lg container-xs"> 
+        <h1 style="margin-top: 50px;">Scan om te registreren</h1><br>
         <div class="container-lg container-xs">
-            <img src="download.png" style="height: 250px; width: 250px;" class="col-lg-4">
+            <img src="download.png" style="height: 200px; width: 200px; margin-bottom:50px;" class="col-lg-4">
         </div>
-            <a class="gast" href="gasten.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-primary col-lg-4">Gast Registreren</button></a>
-            <a class="login" href="login.php"><button style="height: 500px; width: 500px; font-size: 50px;" class="btn btn-success col-lg-4">Admin login</button></a>
-        </div>
+            <a class="gast" href="gasten.php"><button style="height: 250px; width: 300px; font-size: 44px;" class="btn btn-primary col-lg-4">Gast Registreren</button></a>
+    </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

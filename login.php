@@ -130,10 +130,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <span class="help-block"><?php echo $wachtwoord_err; ?></span>
                 </div>
                 <div class="form-group">
-                   <button type="submit" class="btn btn-success" value="Login">Login</button>
+                   <button type="submit" class="btn btn-success margin-button" value="Login">Login</button>
                 </div>
             </form>
-          <a href="index.php"><button class="btn btn-danger">Terug</button></a>
+          <a href="index.php"><button class="btn btn-danger margin-button">Terug</button></a>
           </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

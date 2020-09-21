@@ -77,10 +77,10 @@ while($row = mysqli_fetch_assoc($query)){
                 <option value="2" <?php if ($covid == 2) echo "selected"; ?>>Nee</option>
             </select>
             </div>
-            <input type="submit" class="btn btn-primary button-mobile-size" name="send_form" value="Wijzigen" />
+            <input type="submit" class="btn btn-primary button-mobile-size margin-button" name="send_form" value="Wijzigen" />
           </form>
           <form action="" method="post">
-          <input type="submit" class="btn btn-danger button-mobile-size" name="delete_form" onclick="return confirm('Weet je zeker dat je dit wilt verwijderen?')" value="Verwijderen" />
+          <input type="submit" class="btn btn-danger button-mobile-size margin-button" name="delete_form" onclick="return confirm('Weet je zeker dat je dit wilt verwijderen?')" value="Verwijderen" />
           </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
