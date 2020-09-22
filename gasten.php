@@ -6,30 +6,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $sql = "INSERT INTO `guests` (firstname, lastname, email, phone, covid) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['phone']."','".$_POST['checkcovid']."')";
   mysqli_query($link,$sql);
 
-  if ($link->query($sql) === TRUE) {
-  $last_id = $conn->mysqli_insert_id;
-    echo "New record created successfully. Last inserted ID is: " . $last_id;
-  } else {
-    echo "Error: " . $sql . "<br>" . $link->error;
-  }
-  $last_id = $conn->mysqli_insert_id;
+  $last_id = $link->insert_id;
   $last_id = strval($last_id);
   $to_email = $_POST['emailaddress'];
   $subject = "Druk op de knop of af te melden";
-  $body = '<html>
+  $body = "<html>
             <head>
                 <title>Klik op de knop om af te melden</title>
             </head>
             <body>
-            <a href="http://localhost/project9/afmelden.php?id="$last_id""><button>Klik hier om af te melden</button></a>
+            <a href=\"http://localhost/project9/afmelden.php?id=$last_id\"><button>Klik hier om af te melden</button></a>
             </body>
-            </html>';
+            </html>";
   $headers = "From: Registratie ROC Rivor";
   $headers .= "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
   $headers .= 'X-Mailer: PHP/' . phpversion();
 
-  if (mail($to_email, $subject, $body, $headers, $last_id)) {
+  if (mail($to_email, $subject, $body, $headers)) {
       echo "Email successfully sent to $to_email...";
   } else {
       echo "Email sending failed...";
