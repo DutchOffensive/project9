@@ -2,25 +2,30 @@
 require_once "config.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-  $sql = "INSERT INTO `guests` (firstname, lastname, email, phone, covid) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['phone']."','".$_POST['checkcovid']."')";
+  $timestamp = date("Y-m-d H:i:s");
+  $sql = "INSERT INTO `guests` (`firstname`, `lastname`, `email`, `phone`, `covid`, `timestamp`, `time_left`) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['phone']."','".$_POST['checkcovid']."','$timestamp','')";
   mysqli_query($link,$sql);
 
+  $naam = $_POST['firstname'];
   $last_id = $link->insert_id;
   $last_id = strval($last_id);
   $to_email = $_POST['emailaddress'];
   $subject = "Druk op de knop of af te melden";
-  $body = "<html>
+  $body = "Beste $naam," . "<br><br>" . " Uw bezoek aan het Roc Rivor staat geregistreerd." . "<br>" . "Wij verzoeken u vriendelijk af te melden bij vertrek. Alvast bedankt." . "<br><br>" .
+            "<html>
             <head>
-                <title>Klik op de knop om af te melden</title>
+                <title>Druk op de knop om af te melden</title>
             </head>
             <body>
-            <a href=\"http://localhost/project9/afmelden.php?id=$last_id\"><button>Klik hier om af te melden</button></a>
-            </body>
-            </html>";
-  $headers = "From: Registratie ROC Rivor";
-  $headers .= "MIME-Version: 1.0" . "\r\n"; 
+            <a href=\"http://localhost/project9/afmelden.php?id=$last_id\">Klik hier om af te melden</a>
+            </body>"
+             . "<br><br>" . "Met vriendelijke groet," . "<br>" . "Naam en achternaam" . "<br>" . "ROC Rivor" . "<br><br>" . "</html>";
+  $headers = "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
+  $headers .= "From: registreerrocrivor@gmail.com" . "\r\n";
+  $headers .= "Reply-To: registreerrocrivor@gmail.com" . "\r\n"; 
+  $headers .= "X-Priority: 3\r\n";
+
   $headers .= 'X-Mailer: PHP/' . phpversion();
 
   if (mail($to_email, $subject, $body, $headers)) {
