@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <title>Druk op de knop om af te melden</title>
             </head>
             <body>
-            <a href=\"http://localhost/project9/afmelden.php?id=$last_id\">Klik hier om af te melden</a>
+            <a style=\"font-size: 24px;\" href=\"http://localhost/project9/afmelden.php?id=$last_id\">Klik hier om af te melden</a>
             </body>"
              . "<br><br>" . "Met vriendelijke groet," . "<br>" . "Naam en achternaam" . "<br>" . "ROC Rivor" . "<br><br>" . "</html>";
   $headers = "MIME-Version: 1.0" . "\r\n"; 
@@ -42,11 +42,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="rivor-icon.jpg" type="imgae/x-icon" >
+        <hr class="line">
     </head>
     <body>
         <h1>Gasten registratie</h1><br>
         <div class="container-lg container-xs ">
-          <form action="" method="post">
+          <form action="" onsubmit="document.getElementById('register').disabled=true
+      document.getElementById('register').value='Submitting, please wait...';" method="post">
             <div class="form-row">
               <div class="col-lg-6 col-xs-12">
                 <label for="validationDefault01">Voornaam</label>
@@ -59,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-row">
               <div class="col-lg-6 col-xs-12">
-                <label for="validationDefault03">Email-adres</label>
+                <label for="validationDefault03">Emailadres</label>
                 <input type="email" class="form-control" id="validationDefault03" name="emailaddress" required>
               </div>
               <div class="col-lg-6 col-xs-12">
@@ -74,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <option value="2">Nee</option>
             </select>
             </div>
-            <button class="btn btn-primary margin-button" type="submit">Registreren</button> 
+            <button class="btn btn-primary margin-button" id="register" type="submit">Registreren</button> 
           </form>
           <a href="index.php"><button class="btn btn-danger margin-button">Terug</button></a>
         </div>
@@ -82,5 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+    <script>
+    </script>
+      </body>
 </html>

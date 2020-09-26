@@ -1,11 +1,17 @@
 h1{
     text-align: center;
+    color: #2f6fd5;
 }
 h3{
     text-align: center;
 }
 body{
     margin: 0px;
+}
+.line{
+    border-color: #2f6fd5;
+    border-width: 15px;
+    margin-top: 0px;
 }
 .card{
     margin: 0px;
@@ -43,6 +49,7 @@ td{
 .form-control{
     font-size: 24px;
     border-width: 1px;
+    margin-bottom: 20px;
 }
 .custom-select{
     font-size: 24px;
@@ -53,7 +60,7 @@ td{
 }
 .admin-login{
     float:right;
-    margin: 5px 5px 0 0;
+    margin: 20px 5px 0 0;
     position: absolute;
     right: 0.5%;
     top: 0.5%;
@@ -89,5 +96,11 @@ td{
     .admin-login{
         height: 50px;
         font-size: 24px !important;
+    }
+    td{
+        font-size: 24px !important;
+    }
+    #rivor-logo{
+        width: 35% !important;
     }
 }
