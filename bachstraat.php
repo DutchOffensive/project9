@@ -19,19 +19,20 @@
     </head>
     <body>
     <div class="container-lg">
-    <a href="index.php"><button class="btn btn-success">Home</button></a>
-    <a href="home.php"><button class="btn btn-danger">Terug</button></a>
-    <a href="afwezig.php"><button class="btn btn-primary">Afwezig</button></a>
+    <a href="index.php"><button class="btn btn-outline-success">Home</button></a>
+    <a href="home.php"><button class="btn btn-outline-danger navi-knop">Terug</button></a>
     <input style="margin-top: 50px;" placeholder="Zoek op naam" id="mylist" onkeyup="myFunction()" class='form-control'>
+    <a href="afwezig.php"><button class="btn btn-outline-primary navi-knop">Afwezig</button></a>
     <br>
     <br>
-
+    
     <table class='table table-striped'>
     <tbody class="bigger-font">
         <td scope="col"><p>Voornaam</p></td>
         <td scope="col"><p>Achternaam</p> </td>  
         <td scope="col"><p>Telefoonnummer</p></td>  
-        <td scope="col"><p>Tijd</p></td>   
+        <td scope="col"><p>Tijd</p></td>
+        <td scope="col"><p>Wijzig</p></td>      
     </tbody>
     </table>   
     </div>
@@ -77,8 +78,8 @@ while($row = mysqli_fetch_assoc($query)){
     // echo "<tbody>";
     echo "<tr>";
     echo "<td scope='col'>" . $array["firstname"] . "</td>" . "<td scope='col'>" . $array["lastname"] . "</td>" . "<td scope='col'>" . $array["phone"] . "</td>" . "<td scope='col'>" . $array["timestamp"] . "</td>";
-    echo "<td scope='col'>" . "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-info knop' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>" . "</td>";
-    echo "<tr>";
+    echo "<td scope='col'>" . "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-outline-primary knop' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>" . "</td>";
+    echo "</tr>";
     // echo "</tbody>";
   }
   echo "</table>";

@@ -19,9 +19,9 @@ header("location: index.php");
     </head>
     <body>
     <div class="container-lg">
-    <a href="index.php"><button class="btn btn-success">Home</button></a>
-    <a href="home.php"><button class="btn btn-danger">Terug</button></a>
-    <a href="bachstraat.php"><button class="btn btn-primary">Aanwezig</button></a>
+    <a href="index.php"><button class="btn btn-outline-success">Home</button></a>
+    <a href="home.php"><button class="btn btn-outline-danger">Terug</button></a>
+    <a href="bachstraat.php"><button class="btn btn-outline-primary">Aanwezig</button></a>
     <input style="margin-top: 50px;" placeholder="Zoek op naam" id="mylist" onkeyup="myFunction()" class='form-control'>
     <br>
     <br>
@@ -66,20 +66,19 @@ $query = mysqli_query($link,$sql) or die(mysqli_error($link));
 
 $rows = array();
 
+echo "<div class='container-lg hide'>"; 
+echo "<table id='myTable' class='table table-striped'>"; 
+
 while($row = mysqli_fetch_assoc($query)){
     array_push($rows, $row);
   }
   foreach ($rows as $key => $array) {
     $id = $array['id_guests'];
-    echo "<div class='container-lg hide'>"; 
-    echo "<table id='myTable' class='table table-striped'>"; 
-    echo "<tbody>";
     echo "<tr>";
     echo "<td scope='col'>" . $array["firstname"] . "</td>" . "<td scope='col'>" . $array["lastname"] . "</td>" . "<td scope='col'>" . $array["phone"] . "</td>" . "<td scope='col'>" . $array["timestamp"] . "</td>";
-    echo "<tr>";
-    echo "</tbody>";
-    echo "</table>";
-    echo "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-info knop' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>";
-    echo "</div>";
+    echo "<td scope='col'>" . "<a href='details.php?id=" . $id . "'" . ">" . "<button class='btn btn-outline-primary knop' type='button' title='Edit'>" . 'Edit' . "</button>" . "</a>" . "</td>";
+    echo "</tr>";
   }
+  echo "</table>";
+  echo "</div>";
 ?>

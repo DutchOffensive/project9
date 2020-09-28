@@ -12,7 +12,7 @@ $affected_rows = mysqli_affected_rows($link);
 if($affected_rows == 0){
     echo"<h1>Helaas, er is iets mis gegaan. Probeer het nogmaals.</h1>";
     die;
+} else{
+ header("location: bedankt.php");
 }
-
-header("location: bedankt.php");
 ?>

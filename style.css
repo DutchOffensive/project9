@@ -44,7 +44,6 @@ td{
 .knop{
     position: relative;
     float: right;
-    margin-top: -15px;
 }
 .form-control{
     font-size: 24px;
@@ -102,5 +101,8 @@ td{
     }
     #rivor-logo{
         width: 35% !important;
+    }
+    .navi-knop{
+        float: right;
     }
 }
