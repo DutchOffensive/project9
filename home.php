@@ -29,9 +29,9 @@ header("location: index.php");
 </div>
 
         <h1>ROC Rivor</h1><br>
-<div class="container">
+<div class="container-lg">
     <div class="row">
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/ROC_Diploma_Route-1.c202dd06.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -41,7 +41,7 @@ header("location: index.php");
                 </div>
             </div>
         </div>
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/ROC_Diploma_Route-1.963ce4db.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -51,7 +51,7 @@ header("location: index.php");
                 </div>
             </div>
         </div>
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/pand_atotechniek_2.818667c1.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -63,7 +63,7 @@ header("location: index.php");
         </div>
     </div>
     <div class="row">
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/IMG_0073-berwerkt.60a470d9.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -73,7 +73,7 @@ header("location: index.php");
                 </div>
             </div>
         </div>
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/Rivor_dg_5_-196.8a0bc8ef.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -83,7 +83,7 @@ header("location: index.php");
                 </div>
             </div>
         </div>
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/ROC_Diploma_Route-3.fc46807b.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
@@ -95,7 +95,7 @@ header("location: index.php");
         </div>
     </div>
     <div class="row">
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-xs-4">
             <div class="card">
                 <img src="https://www.rocrivor.nl/media/images/ROC_Dag_6_2.2e16d0ba.fill-360x240.jpegquality-80.jpg" class="card-img-top">
                 <div class="card-body">
