@@ -20,9 +20,9 @@ header("location: index.php");
     <body>
     <div class="container-lg">
     <a href="index.php"><button class="btn btn-outline-success">Home</button></a>
-    <a href="home.php"><button class="btn btn-outline-danger">Terug</button></a>
-    <a href="bachstraat.php"><button class="btn btn-outline-primary">Aanwezig</button></a>
+    <a href="home.php"><button class="btn btn-outline-danger navi-knop">Terug</button></a>
     <input style="margin-top: 50px;" placeholder="Zoek op naam" id="mylist" onkeyup="myFunction()" class='form-control'>
+    <a href="bachstraat.php"><button class="btn btn-outline-primary navi-knop">Aanwezig</button></a>
     <br>
     <br>
 

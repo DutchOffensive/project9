@@ -47,7 +47,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Beethovenstraat, Tiel</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Franklinstraat, Tiel</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Gijsbert Stoutweg, Tiel</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Voor de Kijkuit, Tiel</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Oudenhof, Geldermalsen</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@ header("location: index.php");
                 <div class="card-body">
                 <h5 class="card-title">Poppenbouwing, Geldermalsen</h5>
                 <p class="card-text"></p>
-                <a href="bachstraat.php"><button class="btn btn-primary">Check aanwezigen</button></a>
+                <a href="bachstraat.php"><button class="btn btn-primary" disabled>Check aanwezigen</button></a>
                 </div>
             </div>
         </div>
