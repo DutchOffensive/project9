@@ -4,7 +4,7 @@ $id = $_GET['id'];
 
 $time_left = date("Y-m-d H:i:s");
 
-$sql = "UPDATE `guests` SET `time_left`='$time_left' WHERE `id_guests` = $id";
+$sql = "UPDATE `guests` SET `time_left`='$time_left' WHERE `id_guests` = $id AND `time_left` = ''";
 mysqli_query($link,$sql);
 
 $affected_rows = mysqli_affected_rows($link);
